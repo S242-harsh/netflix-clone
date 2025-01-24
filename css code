@@ -1,0 +1,117 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: white;
+  line-height: 1.6;
+}
+
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e50914;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+header .profile img {
+  border-radius: 50%;
+}
+
+.hero {
+  background: url('https://via.placeholder.com/1920x500') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background-color: #e50914;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.hero button:hover {
+  background-color: #f40612;
+}
+
+.movies {
+  padding: 20px;
+}
+
+.movies h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.movie-carousel {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.movie-carousel img {
+  border-radius: 5px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.movie-carousel img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #000;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
