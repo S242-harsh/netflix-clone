@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Netflix</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">My List</a></li>
+      </ul>
+    </nav>
+    <div class="profile">
+      <img src="https://via.placeholder.com/32" alt="User">
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Watch the Best Movies and TV Shows</h1>
+      <p>Stream unlimited movies and TV shows anywhere, anytime.</p>
+      <button>Watch Now</button>
+    </div>
+  </section>
+
+  <section class="movies">
+    <h2>Trending Now</h2>
+    <div class="movie-carousel">
+      <img src="https://via.placeholder.com/150x200?text=Movie+1" alt="Movie 1">
+      <img src="https://via.placeholder.com/150x200?text=Movie+2" alt="Movie 2">
+      <img src="https://via.placeholder.com/150x200?text=Movie+3" alt="Movie 3">
+      <img src="https://via.placeholder.com/150x200?text=Movie+4" alt="Movie 4">
+      <img src="https://via.placeholder.com/150x200?text=Movie+5" alt="Movie 5">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Netflix Clone. All rights reserved.</p>
+  </footer>
+</body>
+</html>
