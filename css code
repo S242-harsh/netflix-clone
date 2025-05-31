@@ -1,117 +1,141 @@
-/* Reset Styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #141414;
-  color: white;
-  line-height: 1.6;
+.main_box {
+    background: url(cemera.jpg.jpg);
+    height: 100vh;
+    background-size: cover;
 }
 
-header.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #000;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.btn_one i{
+    color: rgba(255, 255, 255, 0.819);
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    transition:  all 0.3s linear;
+   
 }
 
-header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #e50914;
+.sidebar_menu {
+    position: fixed;
+    left: -300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 100vh;
+    width: 300px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition:  all 0.3s linear;
 }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5);
+    height: 60px;
+   
+
 }
 
-header nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 0.9rem;
+.sidebar_menu .logo a {
+    position: absolute;
+    left: 50px;
+    color:#a2a207;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    /* font-family: "Rubik Maze", serif; */
+    /* font-family: "Gloria Hallelujah", serif; */
+    font-family: "Creepster", serif;
+    
+    
 }
 
-header .profile img {
-  border-radius: 50%;
+.sidebar_menu .btn_two i {
+    color: grey;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 275px;
+    /* opacity: 0; */
+    cursor: pointer;
+    transition:  all 0.3s linear;
+
 }
 
-.hero {
-  background: url('https://via.placeholder.com/1920x500') no-repeat center center/cover;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
+.sidebar_menu .menu {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+
 }
 
-.hero-content {
-  max-width: 600px;
+.sidebar_menu .menu li {
+    margin-top: 6px;
+    padding: 14px 20px;
+
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+.sidebar_menu .menu i,
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
 }
 
-.hero p {
-  margin-bottom: 20px;
+.sidebar_menu .menu i {
+    padding-right: 8px;
 }
 
-.hero button {
-  background-color: #e50914;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
+.sidebar_menu .social_media {
+
+
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+
 }
 
-.hero button:hover {
-  background-color: #f40612;
+.sidebar_menu .social_media i {
+    color: white;
+    opacity: 0.5;
+    padding: 0 5px;
+
 }
 
-.movies {
-  padding: 20px;
+#check {
+    display: none;
 }
 
-.movies h2 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+.sidebar_menu .menu li:hover {
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
 }
 
-.movie-carousel {
-  display: flex;
-  gap: 15px;
-  overflow-x: auto;
+.btn_one i:hover {
+    font-size: 40px;
 }
 
-.movie-carousel img {
-  border-radius: 5px;
-  transition: transform 0.3s;
-  cursor: pointer;
+.btn_two i:hover {
+    font-size: 30px;
 }
 
-.movie-carousel img:hover {
-  transform: scale(1.1);
+.sidebar_menu .social_media i:hover {
+    opacity: 1;
+    transform: scale(1.1);
 }
+#check:checked~.sidebar_menu {
+    left: 0;
+}
+#check:checked~.btn_one i{ 
+    opacity: 0;
 
-footer {
-  text-align: center;
-  padding: 10px 0;
-  background-color: #000;
-  margin-top: 20px;
-  font-size: 0.9rem;
-  color: #aaa;
+}
+#check:checked~.sidebar_menu .btn_two i{ 
+    opacity: 1;
+
 }
